@@ -1,17 +1,18 @@
-//1010 - Undone
+//1010
 
 #include <stdio.h>
 
 int main() {
-	int i = 1;
-	int j;
-	int k;
-	float point = 0.0;
-	double tempTotal = 0.0;
-	for (j = 1; j <= 30; j++) {
-		for (k = 1; k <= i; k++) {
-			point = point * k;
-		}
-
+	double a;
+	double b;
+	double c=0.0;
+	double d=1.0;
+	for(a = 2; a <= 30; a++) {
+		for(b = 1; b <= a; b++)
+			d = d * b;
+		c = c + d;
+		d = 1;
 	}
+	c++;
+	printf("%.2e\n", c);
 }
