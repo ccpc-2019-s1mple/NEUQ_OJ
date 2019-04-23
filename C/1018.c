@@ -1,20 +1,18 @@
-//1018 Untested
+//1018 Incorrect
 
 #include <stdio.h>
 
 int main() {
-	unsigned double A[100] = {0.0};
-	unsigned double B[100] = {0.0};
+	int n;
 	int i = 0;
-	int j = 0;
-	scanf("%d", i);
-	j = i;
-	for (i; i > 0; i--) {
-		scanf("%f %f", &A[100 - i], &B[100 - i]);
+	long long int A;
+	long long int B;
+	scanf("%d", &n);
+	while (n--) {
+		i++;
+		scanf("%lld %lld", &A, &B);
+		printf("case %d:\n%lld + %lld = %lld\n",i , A, B, A + B);
 	}
-
-	for (i; i < j; i++) {
-		printf("Case %d:\n", i + 1);
-		printf("%.0f + %.0f = %.0f", A[i], B[i], A[i] + B[i]);
-	}
-}
+	
+	return 0;
+} 
