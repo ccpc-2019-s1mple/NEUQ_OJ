@@ -12,7 +12,7 @@
 [1014](http://newoj.acmclub.cn/problems/1014)  
 [1015](http://newoj.acmclub.cn/problems/1015)  
 [1017](http://newoj.acmclub.cn/problems/1017)  
-[1018](http://newoj.acmclub.cn/problems/1018)<sup>结果错误</sup>  
+[1018](http://newoj.acmclub.cn/problems/1018)<sup>未完成</sup>  
 [1019](http://newoj.acmclub.cn/problems/1019)<sup>结果错误</sup>  
 [1023](http://newoj.acmclub.cn/problems/1023)<sup>未完成</sup>  
 [1024](http://newoj.acmclub.cn/problems/1024)<sup>未完成</sup>  
