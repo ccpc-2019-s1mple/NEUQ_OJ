@@ -17,6 +17,7 @@
 [1023](http://newoj.acmclub.cn/problems/1023)<sup>未完成</sup>  
 [1024](http://newoj.acmclub.cn/problems/1024)<sup>未完成</sup>  
 [1025](http://newoj.acmclub.cn/problems/1025)<sup>上传出错</sup>  
+[1887](http://newoj.acmclub.cn/problems/1887)  
 
 ------  
 
