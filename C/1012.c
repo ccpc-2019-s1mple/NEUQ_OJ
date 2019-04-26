@@ -1,31 +1,34 @@
-//1012 Incorrect
+//1012
 
 #include <stdio.h>
 
 int main() {
-	int i;
-	int j;
-	int k;
 	int n = 0;
-	int Gen1 = 1, Gen2 = 1;
-	int GenN = 1;
-	int Fib[30] = {0};
-	int result[10];
-	scanf("%d", &i);
-	for (i; i > 0; i--) {
-		scanf("%d %d %d", &Gen1, &Gen2, &GenN);
-		Fib[0] = Gen1;
-		Fib[1] = Gen2;
-		for (j = 2; j <= GenN; j++) {
-			for (k = 0; k < j; k++) {
-				Fib[j] = Fib[j] + Fib[k];
+	int i = 0;
+	int j = 0;
+	int query = 0;
+	int Fib[31] = {0};
+	
+	scanf("%d", &n);
+	while (n--) {
+		scanf("%d %d %d", &Fib[1], &Fib[2], &query);
+		
+		if (query < 3) {
+			printf("%d\n", Fib[query]);
+			continue;
+		}
+		
+		for (i = 3; i <= 31; i++) {
+			if (i % 2 == 0) {
+				Fib[i] = Fib[i - 1] + Fib[i - 2] + Fib[i - 3];
+			}
+			else {
+				Fib[i] = Fib[i - 1] + Fib[i - 2];
 			}
 		}
-		result[10 - i] = Fib[j];
-		n++;
-	} 
-	
-	for (i = 0; i < n; i++) {
-		printf("%d\n", result[i]);
+		
+		printf("%d\n", Fib[query]);
 	}
-} 
+	
+	return 0;
+}
