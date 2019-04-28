@@ -1,4 +1,4 @@
-//1009.c
+//1009
 
 #include <stdio.h>
 #include <string.h>
