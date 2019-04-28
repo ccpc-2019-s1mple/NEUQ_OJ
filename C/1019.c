@@ -10,8 +10,8 @@ int main() {
 	while (1) {
 		scanf("%d", &n);
 		if (n == -1) break;
-		if (n == 1) {
-			printf("55\n");
+		if (n == 0) {
+			printf("1\n");
 			continue;
 		}
 		printf("5");
