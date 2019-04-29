@@ -3,18 +3,23 @@
 #include <stdio.h>
 
 int main() {
+	int i = 0;
 	int n = 0;
-	double a;
-	double b;
-	double c = 0.0;
-	double d = 1.0;
+	int j = 0;
+	long long a = 1;
+	long long sum = 0;
+	
 	scanf("%d", &n);
-	for(a = 2; a <= n; a++) {
-		for(b = 1; b <= a; b++)
-			d = d * b;
-		c = c + d;
-		d = 1;
+	
+	for(i = 1; i <= n; i++) {
+		for(j = 1; j <= i; j++) {
+			a = a * j;
+		}
+		sum = sum + a;
+		a = 1;
 	}
-	c++;
-	printf("%.0f\n", c);
+	
+	printf("%lld", sum);
+	
+	return 0;
 }
