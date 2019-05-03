@@ -1,3 +1,8 @@
 
 *.o
 *.exe
+*.class
+
+Test.c
+Test.cpp
+Test.java
