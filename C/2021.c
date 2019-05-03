@@ -1,6 +1,10 @@
+//2021
+
 #include <stdio.h>
+
 typedef long long ll;
 const int mod = 20180520;
+
 int main()
 {
 	int b;
