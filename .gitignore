@@ -3,7 +3,4 @@
 *.exe
 *.class
 
-C\Test.c
-Cܳ\Test.cpp
-Java\Test.java
-
+C/Test.c
