@@ -3,6 +3,7 @@
 *.exe
 *.class
 
-Test.c
-Test.cpp
-Test.java
+C/Test.c
+Cܳ/Test.cpp
+Java/Test.java
+
