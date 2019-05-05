@@ -2,6 +2,17 @@
 
 #include <stdio.h>
 
+void Turn(int (*array)[3]) {
+	int i = 0;
+	int j = 0;
+	for (i = 0; i < 3; i++) {
+		for (j = 0; j < 3; j++) {
+			printf("%d ", array[j][i]);
+		}
+		printf("\n");
+	}
+}
+
 int main() {
 	int i = 0;
 	int j = 0;
@@ -13,10 +24,7 @@ int main() {
 		}
 	}
 	
-	for (i = 0; i < 3; i++) {
-		for (j = 0; j < 3; j++) {
-			printf("%d ", array[j][i]);
-		}
-		printf("\n");
-	}
+	Turn(array);
+	
+	return 0;
 }
