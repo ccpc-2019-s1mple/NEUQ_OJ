@@ -12,8 +12,8 @@ int main() {
 	for (i = 0; i < 6; i++) scanf("%d", &array1[i]);
 	for (i = 0; i < 8; i++) scanf("%d", &array2[i]);
 	
-	for (i = 1; i <= 6 - 1; i++) {
-		for (j = 1; j <= 6 - i; j++) {
+	for (i = 0; i <= 6 - 1; i++) {
+		for (j = 0; j <= 6 - i - 1; j++) {
 			if (array1[j] < array1[j + 1]) {
 				temp = array1[j];
 				array1[j] = array1[j + 1];
@@ -21,7 +21,7 @@ int main() {
 			}
 		}
 	}
-	
+	/*
 	for (i = 1; i <= 8 - 1; i++) {
 		for (j = 1; j <= 8 - i; j++) {
 			if (array2[j] < array2[j + 1]) {
@@ -31,7 +31,7 @@ int main() {
 			}
 		}
 	}
-	
+	*/
 	for (i = 5; i >= 0; i--) {
 		for (j = 7; j >= 0; j--) {
 			if (array1[i] == array2[j]) {
