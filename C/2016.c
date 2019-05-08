@@ -3,13 +3,16 @@
 #include <stdio.h>
 
 int main() {
+	long long i = 0;
 	long long l = 0,r = 0;
 	scanf("%lld %lld", &l, &r);
 	
-	while((l | (l + 1)) <= r){
-        l |= (l + 1);
-    }
-    printf("%d", l);
+	for (i = l; i <= r; i++) {
+		if ((i | i + 1) > r) {
+			printf("%lld", i);
+			break;
+		}
+	}
 	
 	return 0;
 }
